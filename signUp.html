@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Service BD</title>
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  
+ 
+
+
+</head>
+<body>
+    <!-- navbar start here -->
+    <i class="fas fa-bars fa-2x" id="responsiveMenuIcon"></i>
+    <nav id="responsiveMenu" class="hidden">
+
+        <ul class="nav-item flex-space-around" >
+         <li class="nav-list">
+            <a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home Service <sup class="supStyle">BD</sup></a>
+         </li>
+         <li class="nav-list">
+            <label for="search-item">
+                <input type="text" id="search-item" placeholder="search here " ><span><i class="fa-solid fa-magnifying-glass "></i></span>
+            </label>
+         </li>
+         <li class="nav-list">
+            <a href="service.html" class="nav-link">Our Services</a>
+         </li>
+         <li class="nav-list">
+            <a href="login.html" class="nav-link">login / sign up</a>
+         </li>
+
+         <li class="nav-list">
+            <a href="profile.html">
+                <img src="spImage/user-lmage.jpg" alt="my_photo" class="profile-icon">
+            </a>
+         </li>
+        </ul>
+
+        
+        
+</nav>
+
+
+<!-- navbar ends here -->
+    
+    <main>
+        <section class="register">
+          <h2 class="section-title text-center " style="color: aliceblue;">User Registration</h2>
+          <div class="card">
+            
+            <form action="" class="form">
+              <div class="form-control flex-center">
+                <label for="name">Name :</label>
+                <input type="text" id="name" required autocomplete="name" />
+                
+              </div>
+              <div class="form-control flex-center">
+                <label for="email">Email : </label>
+                <input type="email" id="email" required autocomplete="email" />
+              </div>
+              <div class="form-control flex-center">
+                <label for="password">Password: </label>
+                <input
+                  type="password"
+                  id="password"
+                  required
+                  autocomplete="password"
+                />
+              </div>
+              <div class="form-control flex-center">
+                <label for="about">About Me : </label>
+                <textarea name="about" id="about"></textarea>
+              </div>
+              <div class="form-control flex-center form-btn-field">
+                <button type="submit" class="addButton contact-btn">submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer starts here  -->
+<footer class="footer flex-space-around">
+    <div class="flex-space-around">
+      <label for="subscribe">Subscribe to Newsletter: </label>
+      <input
+        type="email"
+        id="subscribe"
+        name="subscribe"
+        class="footer__input"
+        placeholder="your Email Address"
+      />
+      
+      <button class="addButton button_subscribe">subscribe</button>
+
+      
+    </div>
+    <div class="media-button">
+
+      <button class="addButton" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback">
+        <i class="fa-brands fa-youtube" style="color:red" ></i></button>
+
+      <button class="addButton" onclick="window.open('https://m.facebook.com/samsularefinmilen1205/?comment_id=Y29tbWVudDoxMTkxODkxMDQxNDE1NjNfNjExNzMzNjQ2NjAwMDYw')" class="request-callback"><i class="fa-brands fa-facebook" style="color:rgb(69, 69, 182)"></i></button>
+
+
+      <button class="addButton" onclick="window.open('https://www.linkedin.com/in/samsul-arefin-3a7804228/')" class="request-callback"><i class="fa-brands fa-linkedin" style="color:rgb(69, 101, 190)"></i></button>
+
+      <button class="addButton" onclick="window.open('https://github.com/arefinMilen')" class="request-callback"><i class="fa-brands fa-github" style="color:black" ></i></button>
+
+      <!-- <button class="btn" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback"><i class="fa-brands fa-youtube" style="color:red" ></i></button> -->
+
+      <!-- <button class="btn" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback"><i class="fa-brands fa-youtube" style="color:red" ></i></button> -->
+
+  </div>
+    <div>
+      <p>&copy; Copyright 2024. All rights reserved Home service BD</p>
+    </div>
+  </footer>
+  <!-- footer ends here  -->
+
+  <script src="dynamic.js"></script>
+</body>
+</html>

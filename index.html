@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Service BD</title>
+    <!-- css link here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dekstop.css">
+    <!-- font awesome emojy link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- bootstrap link here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <!-- navbar start here -->
+    <i class="fas fa-bars fa-2x" id="responsiveMenuIcon"></i>
+    <nav id="responsiveMenu" class="hidden">
+
+        <ul class="nav-item flex-space-around" >
+         <li class="nav-list">
+            <a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home Service <sup class="supStyle">BD</sup></a>
+         </li>
+         <li class="nav-list">
+            <label for="search-item">
+                <input type="text" id="search-item" placeholder="search here " ><span><i class="fa-solid fa-magnifying-glass "></i></span>
+            </label>
+         </li>
+         <li class="nav-list">
+            
+            <li id="menu-products">
+              <a href="service.html" class="nav-link">Our Services</a>
+              <ul id="dropdown-products">
+                <li><a href="#">AC Repair</a></li>
+                <li><a href="#">House Cleaning</a></li>
+                <li><a href="#">Electrical Repair</a></li>
+                <li><a href="#">cooking Service</a></li>
+                <li><a href="#">Cloths Iron</a></li>
+                <li><a href="#">Cylinder Gas</a></li>
+                <li><a href="#">Furniture Clean</a></li>
+                <li><a href="#">Car Wash</a></li>
+                <li><a href="#">Cloths Wash</a></li>
+                <li><a href="#">Fridge Repair</a></li>
+              </ul>
+         </li>
+
+         <li class="nav-list">
+            <a href="login.html" class="nav-link">login / sign up</a>
+         </li>
+
+         <li class="nav-list">
+            <a href="profile.html">
+                <img src="spImage/user-lmage.jpg" alt="my_photo" class="profile-icon">
+            </a>
+         </li>
+        </ul>
+
+        
+        
+</nav>
+
+
+<!-- navbar ends here -->
+
+<!-- banner starts here -->
+
+<header class="header">
+
+    
+</header>
+
+
+
+
+<!-- banner ends here -->
+
+<main class="flex-center">
+  <div class="sidebar">
+    <section class="categories-section">
+      <h3 class="section-title">Categories</h3>
+      <ul class="list">
+        <li class="list__item">
+          <label for="AC Repair">
+            <input type="checkbox" name="AC Repair" id="AC Repair" value="AC Repair" />
+            AC Repair
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="House Cleaning">
+            <input
+              type="checkbox"
+              name="House Cleaning"
+              id="House Cleaning"
+              value="House Cleaning"
+            />
+            House Cleaning
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="Electrical Repair">
+            <input
+              type="checkbox"
+              name="Electrical Repair"
+              id="Electrical Repair"
+              value="Electrical Repair"
+            />
+            Electrical Repair
+          </label>
+        </li>
+
+        <li class="list__item">
+          <label for="Cloths Iron">
+            <input
+              type="checkbox"
+              name="Cloths Iron"
+              id="Cloths Iron"
+              value="Cloths Iron"
+            />
+            Cloths Iron
+          </label>
+        </li>
+
+        <li class="list__item">
+          <label for="cooking service">
+            <input
+              type="checkbox"
+              name="cooking service"
+              id="cooking service"
+              value="cooking service"
+            />
+            cooking service
+          </label>
+        </li>
+
+        <li class="list__item">
+            <label for="Others">
+              <input
+                type="checkbox"
+                name="Others"
+                id="Others"
+                value="Others"
+              />
+              Others
+            </label>
+          </li>
+      </ul>
+    </section>
+
+    <section class="price-section">
+      <h3 class="section-title">Price Range</h3>
+      <ul class="list">
+        <li class="list__item">
+          <label for="price1">
+            <input type="radio" name="price" id="price1" value="[0,200]" />
+            0tk-200tk
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="price2">
+            <input type="radio" name="price" id="price2" value="[200,500]" />
+            21tk-500tk
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="price3">
+            <input type="radio" name="price" id="price3" value="[500,1000]" />
+            500tk-1000tk
+          </label>
+        </li>
+       
+        <li class="list__item">
+          <label for="price5">
+            <input type="radio" name="price" id="price5" value="[501+]" />
+            10000+ tk
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="shippinge-section">
+      <h3 class="section-title">Payments Options</h3>
+      <ul class="list">
+        <li class="list__item">
+          <label for="Cash">
+            <input type="radio" name="shipping" id="free" value="free" />
+            Cash
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="paid">
+            <input type="radio" name="shipping" id="paid" value="paid" />
+            Paid
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="free">
+            <input type="radio" name="shipping" id="free" value="free" />
+            Mobile banking
+          </label>
+        </li>
+        <li class="list__item">
+          <label for="free">
+            <input type="radio" name="shipping" id="free" value="free" />
+            Card
+          </label>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="main-content">
+    <section class="actions flex-space-around">
+      <div class="actions__sort">
+        <label for="sort">Sort By: </label>
+        <select name="sort" id="sort">
+          <option value="sold">Most Ordered first</option>
+          <option value="rating">Most rated first</option>
+          <option value="price">Cheapest first</option>
+          <option value="arrival">Newest first</option>
+          <option value="discount">Biggest discount first</option>
+        </select>
+      </div>
+
+      <div class="actions__search">
+        <input type="text" placeholder="Search product" />
+        <button class="addButton">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- product section starts here  -->
+    <section class="products">
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>23 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/electricity.jpg"
+          alt="electricity"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Electricity Repairing</h3>
+          <!-- <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+          </p> -->
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">200tk</h4>
+          <p class="product__rating">Rating: 4.5/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>33 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/car.jpg"
+          alt="car"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Car Repairing</h3>
+         
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">starts at 1000tk</h4>
+          <p class="product__rating">Rating: 4.2/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>50 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/cook.jpg"
+          alt="cook"
+        />
+        <div class="product__body">
+          <h3 class="product__name">cooking chef</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">starts at 500tk</h4>
+          <p class="product__rating">Rating: 4.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>50 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/dish.jpg"
+          alt="dishwash"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Dish Cleaning</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">start at 150tk</h4>
+          <p class="product__rating">Rating: 4.5/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>250 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/iron.jpg"
+          alt="iron"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Cloths Iron</h3>
+         
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">starts at 100tk</h4>
+          <p class="product__rating">Rating: 4.2/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>100 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/cloths.jpg"
+          alt="cloths"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Cloths Washing</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">Starts at 100tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>order now</span>
+          <hr class="hr-design" />
+          <span>500 times  sold</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/furniture.jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Furniture Cleaning</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">starts at 200tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      <article class="product card">
+        <div class="badge">
+          <span>available</span>
+          <hr class="hr-design" />
+          <span>125 times order </span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/belkoni.jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Home garden service</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">starts at 1000tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>100 times order </span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/fridge.jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Fridge servicing</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">Starts at 299tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>123 sold</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/gas (1).jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Cylinder Gas </h3>
+         
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">1500tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>39 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/ac.jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">AC service</h3>
+          
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">Starts at 1500tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      
+
+      <article class="product card">
+        <div class="badge">
+          <span>Available</span>
+          <hr class="hr-design" />
+          <span>19 times Ordered</span>
+        </div>
+        <img
+          class="product__img"
+          src="./spImage/carWash.jpg"
+          alt="product3"
+        />
+        <div class="product__body">
+          <h3 class="product__name">Car Washing</h3>
+         
+          <p class="product__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            impedit, nihil quia placeat autem commodi...
+            <a href="/product.html" class="learn-more">Learn More</a>
+          </p>
+          <h4 class="product__price">500tk</h4>
+          <p class="product__rating">Rating: 3.8/5</p>
+          <button class="addButton">Add To Cart</button>
+        </div>
+      </article>
+      
+
+    </section>
+    <div class="pagination">
+      <button class="addButton">
+        <i class="fas fa-less-than"></i>
+      </button>
+      <button class="addButton ">2</button>
+      <button class="addButton">3</button>
+      <button class="addButton">4</button>
+      <button class="addButton">5</button>
+      <button class="addButton">6</button>
+      <button class="addButton">7</button>
+      <button class="addButton">8</button>
+      <button class="addButton">9</button>
+      <button class="addButton">10</button>
+      <button class="addButton">...</button>
+      <button class="addButton">50</button>
+      <button class="addButton">
+        <i class="fas fa-greater-than"></i>
+      </button>
+    </div>
+    <!-- product section ends here  -->
+  </div>
+</main>
+
+<!-- footer starts here  -->
+<footer class="footer flex-space-around">
+    <div class="flex-space-around">
+      <label for="subscribe">Subscribe to Newsletter: </label>
+      <input
+        type="email"
+        id="subscribe"
+        name="subscribe"
+        class="footer__input"
+        placeholder="your Email Address"
+      />
+      
+      <button class="addButton button_subscribe">subscribe</button>
+
+      
+    </div>
+    <div class="media-button">
+
+      <button class="addButton" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback">
+        <i class="fa-brands fa-youtube" style="color:red" ></i></button>
+
+      <button class="addButton" onclick="window.open('https://m.facebook.com/samsularefinmilen1205/?comment_id=Y29tbWVudDoxMTkxODkxMDQxNDE1NjNfNjExNzMzNjQ2NjAwMDYw')" class="request-callback"><i class="fa-brands fa-facebook" style="color:rgb(69, 69, 182)"></i></button>
+
+
+      <button class="addButton" onclick="window.open('https://www.linkedin.com/in/samsul-arefin-3a7804228/')" class="request-callback"><i class="fa-brands fa-linkedin" style="color:rgb(69, 101, 190)"></i></button>
+
+      <button class="addButton" onclick="window.open('https://github.com/arefinMilen')" class="request-callback"><i class="fa-brands fa-github" style="color:black" ></i></button>
+
+      <!-- <button class="btn" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback"><i class="fa-brands fa-youtube" style="color:red" ></i></button> -->
+
+      <!-- <button class="btn" onclick="window.open('https://www.youtube.com/@sam_click')" class="request-callback"><i class="fa-brands fa-youtube" style="color:red" ></i></button> -->
+
+  </div>
+    <div>
+      <p>&copy; Copyright 2024. All rights reserved Home service BD</p>
+    </div>
+  </footer>
+  <!-- footer ends here  -->
+<!-- javascript start here -->
+    <script src="dynamic.js">
+
+    </script>
+</body>
+</html>
